@@ -57,21 +57,3 @@ Note: While rows with >50% NaNs have been excluded from training, avoid passing 
 |1217124012| Ankush Tale      | Quantiles, Mann Kendall Trend Test      |   Logistic Regression | Accuracy measures, refactoring code, K-fold Cross Validation |
 |1217202363| Keshin Jani | MeanRange |    GaussianNB, Support Vector | feature function, feature exploration |
 |1215146842| Manikanta Chinkunta | MeanRange |   Variance FFT, Mean FFT, Standard Deviation FFT|  KNearestNeighbor | Feature function |
-
-1. Vaibhav Singhal
-* Features: Deviation, Range
-* Work: Code, modularity of code, testing script
-* Model: Random Forest 
-2. Ankush Tale
-* Features: Quantile, Mann Kendall Trend Test
-* Work: Accuracy measures, refactoring code, K-fold Cross Validation
-* Model: Logistic Regression, Support Vector
-3. Keshin Jani
-* Features: MeanRange
-* Work: feature function
-* Model: GaussianNB, Support Vector
-4. Manikanta Chintakunta
-* Features: Variance FFT, Mean FFT, Standard Deviation FFT
-* Work: Feature function
-* Model: KNearestNeighbor
-
