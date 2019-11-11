@@ -15,7 +15,11 @@ Given multiple timeseries from CGM data for a 2.5 hour window, our objective is 
 3. GaussianNB (67%)
 4. Support Vector Machines (54%)
 5. K-Nearest Neighbor (61%)
-![alt text](https://github.com/ankushtale/MealDetectionforType1Diabetes/blob/master/docs/model_accuracies.jpg "Model Accuracies")
+
+Train Accuracies:
+![alt text](https://github.com/ankushtale/MealDetectionforType1Diabetes/blob/master/docs/model_accuracies.jpg "Train Accuracies")
+Test Accuracies:
+![alt text](https://github.com/ankushtale/MealDetectionforType1Diabetes/blob/master/docs/test_accuracies.jpg "Test Accuracies")
 
 **Salient features**:
 - Data clean-up (Handle columns with >50% NaN values)
