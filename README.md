@@ -65,5 +65,5 @@ All models were randomly picked by team members for implementation
 | -----| :-------------: |:-------------:| -----:| -----:|
 |1215185400| Vaibhav Singhal      | Deviation, Range | Random Forest | Code, modularity of code, testing script |
 |1217124012| Ankush Tale      | Quantiles, Mann Kendall Trend Test      |   Logistic Regression | Accuracy measures, refactoring code, K-fold Cross Validation |
-|1217202363| Keshin Jani | MeanRange |    GaussianNB, Support Vector | feature function, feature exploration |
+|1217202363| Keshin Jani | MeanRange |    GaussianNB, Support Vector | feature function, feature exploration, accuracy measures |
 |1215146842| Manikanta Chinkunta | MeanRange |   Variance FFT, Mean FFT, Standard Deviation FFT|  KNearestNeighbor | Feature function |
