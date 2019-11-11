@@ -1,16 +1,12 @@
-# import warnings filter
 from warnings import simplefilter
-# ignore all future warnings
-simplefilter(action='ignore', category=FutureWarning)
-from main import TopFeatures, transpose, DropIfMaxNaN, handlingNaN, crosstab_stats
+from train import TopFeatures, DropIfMaxNaN, handlingNaN, crosstab_stats
 from features import Features
 from classifiers import Classifiers
 
 import pandas as pd
 import numpy as np
 
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix, classification_report
-
+simplefilter(action='ignore', category=FutureWarning)
 
 if __name__ == '__main__':
     inputTest = pd.read_csv('{}.csv'.format(str(input('Enter Feature File name:\t'))), header=None)
@@ -18,9 +14,9 @@ if __name__ == '__main__':
 
     outputTest.columns = ['Class']
 
-    transpose(inputTest)
-    DropIfMaxNaN(inputTest)
-    handlingNaN(inputTest)
+    inputTest = inputTest.T
+    inputTest = DropIfMaxNaN(inputTest)
+    inputTest = handlingNaN(inputTest)
 
     Test_FeatureMatrix = pd.concat(
         [
@@ -48,6 +44,6 @@ if __name__ == '__main__':
 
         model = Classifiers.load(name)
         pred = model.predict(np.array(Test_DF))
-        crosstab_stats(outputTest['Class'], pred)
+        actual = np.array(outputTest['Class'])
 
-        #print(confusion_matrix(outputTest['Class'], pred))
+        crosstab_stats(np.array(outputTest['Class']), pred)
